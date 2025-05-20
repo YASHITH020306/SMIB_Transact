@@ -19,7 +19,7 @@
           <id>smib-sysenact</id>
           <url>https://helixteamhub.cloud/sysenact868229/projects/smib_sysenact/repositories/maven/SMIB_Transact</url>
           <snapshots>
-            <enabled>false</enabled>
+            <enabled>true</enabled>
           </snapshots>
         </repository>
       </repositories>
