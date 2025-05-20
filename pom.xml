@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.temenos.smib</groupId>
+  <artifactId>SmibTransact</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  	<distributionManagement>
+		<repository>
+			<id>smib-sysenact</id>
+			<name>GitHub Smib-SysEnact Apache Maven Packages</name>
+			<url>https://helixteamhub.cloud/sysenact868229/projects/smib_sysenact/repositories/maven/SMIB_Transact</url>
+		</repository>
+		<!-- <snapshotRepository>
+			<id>smib-sysenact</id>
+			<url>https://helixteamhub.cloud/SysEnactConsultingPvtLtd/projects/sysenact/repositories/maven/smib-sysenact</url>
+		</snapshotRepository>-->
+		<snapshotRepository>
+			<id>helixteamhub.cloud</id>
+			<url>https://helixteamhub.cloud/sysenact868229/projects/smib_sysenact/repositories/maven/SMIB_Transact</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
+	<repositories>
+		<repository>
+			<id>smib-sysenact</id>
+			<url>https://helixteamhub.cloud/sysenact868229/projects/smib_sysenact/repositories/maven/SMIB_Transact</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+
+		<repository>
+			<id>central</id>
+			<name>Maven Central</name>
+			<url>https://repo.maven.apache.org/maven2</url>
+		</repository>
+	</repositories>
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>3.1.1</version>
+				<executions>
+					<execution>
+						<id>default-deploy</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>deploy</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<repositoryId>smib-sysenact</repositoryId>
+					<url>https://helixteamhub.cloud/sysenact868229/projects/smib_sysenact/repositories/maven/SMIB_Transact</url>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.0</version>
+			</plugin>
+
+		</plugins>
+
+
+	</build>
+
+
+</project>
+
