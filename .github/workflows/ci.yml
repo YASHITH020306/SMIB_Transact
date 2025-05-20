@@ -1,14 +1,11 @@
-name: SMIB_Transact Workflow
+name: SMIB_Transact Workflow 1
 
 on:
   push:
-    branches:
-      - dev
-      - prod-test
-      - staging
+    branches: *
+      
   pull_request:
-    branches:
-      - production
+    branches: *
 
 jobs:
   build:
