@@ -1,4 +1,4 @@
-name: SMIB_Transact Workflow 1
+name: SMIB_Transact Workflow
 
 on:
   push:
