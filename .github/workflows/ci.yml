@@ -38,8 +38,8 @@ jobs:
         <servers>
           <server>
             <id>smib-sysenact</id>
-            <username>YashithSasmitha</username>
-            <password>@Yashith0306</password>
+           <username>${{ secrets.HELIX_USERNAME }}</username>
+            <password>${{ secrets.HELIX_PASSWORD }}</password>
           </server>
           
         </servers>
@@ -62,5 +62,5 @@ jobs:
     - name: Publish to Helix TeamHub
       run: mvn deploy -DskipTests --settings .maven/settings.xml
       env:
-        HELIX_USERNAME: "YashithSasmitha"
-        HELIX_PASSWORD: "@Yashith0306"
+        HELIX_USERNAME: ${{ secrets.HELIX_USERNAME }}
+        HELIX_PASSWORD: ${{ secrets.HELIX_PASSWORD }}
