@@ -62,5 +62,5 @@ jobs:
     - name: Publish to Helix TeamHub
       run: mvn deploy -DskipTests --settings .maven/settings.xml
       env:
-        HELIX_USERNAME: YashithSasmitha
-        HELIX_PASSWORD: @Yashith0306
+        HELIX_USERNAME:YashithSasmitha
+        HELIX_PASSWORD:@Yashith0306
