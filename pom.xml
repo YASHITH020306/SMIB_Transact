@@ -1,29 +1,30 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.temenos.smib</groupId>
-  <artifactId>SmibTransact</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  
-  	<distributionManagement>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.temenos.smib</groupId>
+	<artifactId>SmibTransact</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<distributionManagement>
 		<repository>
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																															<id>smib-sysenact</id>
-			<name>GitHub Smib-SysEnact Apache Maven Packages</name>
-			<url>https://helixteamhub.cloud/sysenact868229/projects/smib_sysenact/repositories/maven/SMIB_Transact</url>
-		</repository>
-		<!-- <snapshotRepository>
 			<id>smib-sysenact</id>
-			<url>https://helixteamhub.cloud/SysEnactConsultingPvtLtd/projects/sysenact/repositories/maven/smib-sysenact</url>
-		</snapshotRepository>-->
+			<name>GitHub Smib-SysEnact Apache Maven Packages</name>
+			<url>
+				https://helixteamhub.cloud/sysenact868229/projects/smib_sysenact/repositories/maven/SMIB_Transact</url>
+		</repository>
 		<snapshotRepository>
-			<id>helixteamhub.cloud</id>
-			<url>https://helixteamhub.cloud/sysenact868229/projects/smib_sysenact/repositories/maven/SMIB_Transact</url>
+			<id>smib-sysenact</id>
+			<url>
+				https://helixteamhub.cloud/sysenact868229/projects/smib_sysenact/repositories/maven/SMIB_Transact</url>
 		</snapshotRepository>
 	</distributionManagement>
-	
+
 	<repositories>
 		<repository>
 			<id>smib-sysenact</id>
-			<url>https://helixteamhub.cloud/sysenact868229/projects/smib_sysenact/repositories/maven/SMIB_Transact</url>
+			<url>
+				https://helixteamhub.cloud/sysenact868229/projects/smib_sysenact/repositories/maven/SMIB_Transact</url>
 			<releases>
 				<enabled>true</enabled>
 			</releases>
@@ -39,7 +40,7 @@
 		</repository>
 	</repositories>
 
-	
+
 	<dependencies>
 		<dependency>
 			<groupId>com.temenos.t24.api</groupId>
@@ -48,7 +49,7 @@
 		</dependency>
 	</dependencies>
 
-	
+
 	<build>
 		<plugins>
 			<plugin>
@@ -66,7 +67,8 @@
 				</executions>
 				<configuration>
 					<repositoryId>smib-sysenact</repositoryId>
-					<url>https://helixteamhub.cloud/sysenact868229/projects/smib_sysenact/repositories/maven/SMIB_Transact</url>
+					<url>
+						https://helixteamhub.cloud/sysenact868229/projects/smib_sysenact/repositories/maven/SMIB_Transact</url>
 				</configuration>
 			</plugin>
 			<plugin>
